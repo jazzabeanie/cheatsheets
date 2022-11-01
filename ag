@@ -1,6 +1,11 @@
-# To find text in files by case-insensitive search
-ag -i 'text_to_search'
+# To exclude a directory from a search:
+ag <phrase> --ignore-dir=<dir>
 
-# To only search through filenames
-ag -g 'text_to_search'
+# To exclude a file from a search:
+ag <phrase> --ignore=<file>
 
+# To force colorization:
+ag <phrase> --color | less -R
+
+# To search for <phrase> in files whose names match <pattern>:
+ag <phrase> -G <pattern>
