@@ -9,12 +9,16 @@ conda create --name 'ENVNAME'
 
 # To initialise an environment with python 
 conda create --name 'ENVNAME' python=3.10
+# or
+conda create --prefix ./conda-env python=3.10
 
 # To install from requirements.txt
 conda install --file requirements.txt
 
 # To activate a virtual environment
 conda activate 'ENVNAME'
+# or
+conda activate ./conda-env
 
 # To remove and environment
 conda env remove --name 'ENVNAME'
