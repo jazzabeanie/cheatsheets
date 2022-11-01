@@ -1,0 +1,6 @@
+# To find text in files by case-insensitive search
+ag -i 'text_to_search'
+
+# To only search through filenames
+ag -g 'text_to_search'
+

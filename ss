@@ -11,6 +11,9 @@ Args
 # show all listening tcp sockets including the corresponding process
 ss -tlp
 
+# TODO: show equivalent ss command for `sudo netstat -lnptu`. 
+# 'ss -tlp' doesn't show as much. Is it `ss -tlpn`?
+
 # show all sockets connecting to 192.168.2.1 on port 80
 ss -t dst 192.168.2.1:80
 
