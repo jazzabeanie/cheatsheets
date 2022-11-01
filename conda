@@ -7,8 +7,10 @@ conda env list
 # To initialise an environment
 conda create --name <environment_name>
 
-# To initialise an environment with python3.10 
-conda create --name <environment_name> python=3.10
+# To initialise an environment with python 
+conda create --name 'ENVNAME' python=3.10
+# or
+conda create --prefix ./conda-env python=3.10
 
 # To install from a file
 conda install --file <requirements.txt>
@@ -17,7 +19,9 @@ conda install --file <requirements.txt>
 conda create --clone <old_environment_name> --name <new_environment_name>
 
 # To activate a virtual environment
-conda activate <environment_name>
+conda activate 'ENVNAME'
+# or
+conda activate ./conda-env
 
 # To deactivate a virtual environment
 conda deactivate
