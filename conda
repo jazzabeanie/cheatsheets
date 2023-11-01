@@ -19,12 +19,7 @@ conda install --file <requirements.txt>
 conda create --clone <old_environment_name> --name <new_environment_name>
 
 # To activate a virtual environment
-conda activate 'ENVNAME'
-# or
-conda activate ./conda-env
-
-# To remove and environment
-conda env remove --name 'ENVNAME'
+conda activate <environment_name>
 # or
 conda activate ./conda-env
 
